@@ -31,7 +31,7 @@ CreateThread(function()
         if result and result > 0 then
             addedCount = addedCount + 1
         else
-            table.insert(duplicates, k) -- Track duplicate item keys
+            duplicates[#duplicates+1] = k -- Track duplicate item keys
         end
     end
 
